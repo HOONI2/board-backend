@@ -10,12 +10,18 @@ spring:
     username: ENC(zuoJ802bn4Kgil7G3axzSA==)
     password: ENC(UQ3VKKrjaFsLg02mQnIw/OS7WVSjWFzX)
 
-# 마이바티스
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
 
-# 암호화 설정
+# 마이바티스
+mybatis:
+  mapper-locations: mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    default-statement-timeout: 25
+    lazy-load-trigger-methods: equals,clone,hashCode,toString
+    
 jasypt:
   encryptor:
     bean: jasyptStringEncryptor
