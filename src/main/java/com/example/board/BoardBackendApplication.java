@@ -9,8 +9,7 @@ import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties
 @EnableEncryptableProperties
 public class BoardBackendApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BoardBackendApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(BoardBackendApplication.class, args);
+    }
 }
