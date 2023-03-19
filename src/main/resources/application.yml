@@ -17,6 +17,7 @@ spring:
 # 마이바티스
 mybatis:
   mapper-locations: mybatis/mapper/*.xml
+  type-aliases-package: com.example.board.util
   configuration:
     map-underscore-to-camel-case: true
     default-statement-timeout: 25

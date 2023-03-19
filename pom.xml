@@ -79,7 +79,6 @@
 		<!-- ### encrypt ### --> 
 		
 		<!-- ### oracle ### -->
-
 		<dependency>
 		    <groupId>com.oracle.database.security</groupId>
 		    <artifactId>oraclepki</artifactId>
@@ -98,7 +97,20 @@
 		    <scope>runtime</scope>
 		</dependency>
 		<!-- ### oracle ### -->
-		
+
+		<!--### Camel ###-->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.0</version>
+		</dependency>
+		<!--### Camel ###-->
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.12.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
